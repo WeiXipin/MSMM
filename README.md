@@ -42,17 +42,25 @@ python split.py -d sod
 
 ## Training
 Training MSMM in MSMM/.Select the corresponding training model and go to the corresponding folder
+
 MSMM-C-L in MSMM/tree/main/MSMM/MSMM-final-local_attetion/msmm
+
 MSMM-C-G in MSMM/tree/main/MSMM/MSMM-final-global_attetion/msmm
+
 MSMM-J-L in MSMM/MSMM-joint-local_attetion/msmm
+
 MSMM-J-G in MSMM/MSMM-joint-global_attetion/msmm
 
 ### MSMM-C-L or MSMM-C-G
+
 First train both left and right encoders
+
   `python train_v1.py -d sod -o exp/sod/ape -g 0`
+  
   `python train_v3.py -d sod -o exp/sod/ape -g 0`  
 
 Please fill in the relevant parameters into train123.py, train encoder in the middle.
+
   `python train123.py -d sod -o exp/sod/ape -g 0`
 
 ### MSMM-J-L or MSMM-J-G 
