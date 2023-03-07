@@ -22,13 +22,23 @@ Convert the MIDI and MusicXML files into MusPy files for processing.
 python convert_sod.py
 ```
 
-### Extract the note list
+### Extract the note-level representation
 
 Extract a list of notes from the MusPy JSON files.
 
 ```sh
-python extract.py -d sod
+python mtmt/extract.py -d sod
 ```
+
+### Extract the bar-level representation/track-level representation
+
+sort the note-level representation to bar-level and track-level representation
+
+```sh
+python representation-bar.py -d sod
+python representation-bar.py -d sod
+```
+
 
 ### Split training/validation/test sets
 
