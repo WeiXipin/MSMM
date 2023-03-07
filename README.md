@@ -22,8 +22,6 @@ Convert the MIDI and MusicXML files into MusPy files for processing.
 python convert_sod.py
 ```
 
-> Note: You may enable multiprocessing via the `-j {JOBS}` option. For example, `python convert_sod.py -j 10` will run the script with 10 jobs.
-
 ### Extract the note list
 
 Extract a list of notes from the MusPy JSON files.
