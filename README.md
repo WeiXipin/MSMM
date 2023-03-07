@@ -30,6 +30,13 @@ Extract a list of notes from the MusPy JSON files.
 python mtmt/extract.py -d sod
 ```
 
+### Cut the seq_len to 1024
+Enter the file address in the corresponding place of the code.
+
+```sh
+python cuthang_1024.py
+```
+
 ### Extract the bar-level representation/track-level representation
 
 sort the note-level representation to bar-level and track-level representation
