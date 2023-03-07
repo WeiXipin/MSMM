@@ -36,7 +36,7 @@ sort the note-level representation to bar-level and track-level representation
 
 ```sh
 python representation-bar.py -d sod
-python representation-bar.py -d sod
+python representation-track.py -d sod
 ```
 
 
