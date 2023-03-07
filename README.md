@@ -45,7 +45,7 @@ python representation-track.py -d sod
 Split the processed data into training, validation and test sets.
 
 ```sh
-python split.py -d sod
+python mtmt/split.py -d sod
 ```
 
 ## Training
