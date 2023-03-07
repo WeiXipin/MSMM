@@ -51,9 +51,9 @@ python mtmt/split.py -d sod
 ## Training
 Training MSMM in MSMM/.Select the corresponding training model and go to the corresponding folder
 
-MSMM-LA in MSMM/tree/main/MSMM/MSMM-final-local_attetion/msmm
+MSMM-LA in MSMM/MSMM-final-local_attetion/msmm
 
-MSMM-GA in MSMM/tree/main/MSMM/MSMM-final-global_attetion/msmm
+MSMM-GA in MSMM/MSMM-final-global_attetion/msmm
 
 
 ### MSMM-LA or MSMM-GA
