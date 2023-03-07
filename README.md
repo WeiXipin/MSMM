@@ -82,12 +82,13 @@ The relevant codes for the evaluation are in MSMM/evaluate.
 
 Evaluate the trained model.
 
+Modify the location of the test folder specified in the py file and run the following code:
 ```sh
-python evaluate-all.py -d sod -o exp/sod/ape -g 0
+python evaluate-all.py
 ```
 ```sh
-python evaluate-track-horizontal.py -d sod -o exp/sod/ape -g 0
+python evaluate-track-horizontal.py
 ```
 ```sh
-python evaluate-instruments.py -d sod -o exp/sod/ape -g 0
+python evaluate-instruments.py
 ```
