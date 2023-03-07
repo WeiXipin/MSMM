@@ -60,9 +60,9 @@ MSMM-GA in MSMM/MSMM-final-global_attetion/msmm
 
 First train both left and right encoders
 
-  `python train_v1.py -d sod-note -o exp/sod/ape -g 0`
+  `python train_v1.py -d sod-note -o exp/sod-note/ape -g 0`
   
-  `python train_v3.py -d sod-track -o exp/sod/ape -g 0`  
+  `python train_v3.py -d sod-track -o exp/sod-track/ape -g 0`  
 
 Please fill in the relevant parameters into train123.py, train encoder in the middle.
 
@@ -78,7 +78,7 @@ python mtmt/generate.py -d sod-bar -o exp/sod-bar/ape -g 0
 ```
 
 ## Evaluation
-The relevant codes for the evaluation are in MSMM/tree/main/evaluate.
+The relevant codes for the evaluation are in MSMM/evaluate.
 
 Evaluate the trained model.
 
