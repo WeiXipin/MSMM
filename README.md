@@ -49,7 +49,7 @@ python mtmt/split.py -d sod
 ```
 
 ## Training
-Training MSMM in MSMM/.Select the corresponding training model and go to the corresponding folder
+Select the corresponding training model and go to the corresponding folder.
 
 MSMM-LA in MSMM/MSMM-final-local_attetion/msmm
 
@@ -60,27 +60,21 @@ MSMM-GA in MSMM/MSMM-final-global_attetion/msmm
 
 First train both left and right encoders
 
-  `python train_v1.py -d sod -o exp/sod/ape -g 0`
+  `python train_v1.py -d sod-note -o exp/sod/ape -g 0`
   
-  `python train_v3.py -d sod -o exp/sod/ape -g 0`  
+  `python train_v3.py -d sod-track -o exp/sod/ape -g 0`  
 
 Please fill in the relevant parameters into train123.py, train encoder in the middle.
 
-  `python train123.py -d sod -o exp/sod/ape -g 0`
+  `python -m torch.distributed.launch --nproc_per_node=3 train123.py -o exp/sod-bar/ape`
 
-### MSMM-LA or MSMM-GA 
-  `python train-sod.py -d sod -o exp/sod/ape -g 0`
   
 ## Generation
 Generate new samples using a trained model.
 
-### MSMM-C-L or MSMM-C-G
+### MSMM-LA or MSMM-GA
 ```sh
-python mtmt/generate.py -d sod -o exp/sod/ape -g 0
-```
-### MSMM-J-L or MSMM-J-G 
-```sh
-python mtmt/generate-sod.py -d sod -o exp/sod/ape -g 0
+python mtmt/generate.py -d sod-bar -o exp/sod-bar/ape -g 0
 ```
 
 ## Evaluation
