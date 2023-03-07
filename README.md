@@ -19,7 +19,7 @@ find data/sod/SOD -type f -name *.mid -o -name *.xml | cut -c 14- > data/sod/ori
 Convert the MIDI and MusicXML files into MusPy files for processing.
 
 ```sh
-python convert_sod.py
+python mtmt/convert_sod.py
 ```
 
 ### Extract the note-level representation
